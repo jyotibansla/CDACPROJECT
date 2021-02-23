@@ -1,0 +1,51 @@
+<p>{{message}}</p>
+
+<div>
+    <h6><span class="float-left" style="color:blue">PRN Number:&nbsp;&nbsp;&nbsp; {{prn}} &nbsp;&nbsp;&nbsp;</span></h6>
+     <h6><span class="float-right" style="color:blue">Student Name:&nbsp; {{sname}} &nbsp;&nbsp;&nbsp;</span></h6><BR/>
+     <h6><span class="float-left" style="color:blue">Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{subject}}&nbsp;&nbsp;</span></h6>
+     <h6><span class="float-right" style="color:blue">Date:&nbsp; {{ CurrentDate | date:'dd/MM/yyyy'}} &nbsp;&nbsp;&nbsp;</span></h6><BR/>
+     <h6><span class="float-left" style="color:blue">Time remaining:{{hours_}}:{{minutes_}}:{{timeleftd}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h6>
+     <h6><span class="float-right" style="color:blue">Duration:&nbsp; {{duration}} mins &nbsp;&nbsp;&nbsp;</span></h6><BR/>
+</div>
+<br/><br/><br/>
+
+
+<div class="float-left">
+<h6>   {{qno}}     {{stem}}</h6>
+</div>
+<br/><br/>   
+    <div class="float-left">
+    <input type="radio" id=1 name="opt"  (click)='option_click($event,qno)' [(ngModel)]="opt" value="inputval1" checked />&nbsp;{{inputval1}} <br/>
+    </div><br/>
+          <div class="float-left">
+     <input type="radio" id=2 name="opt" (click)='option_click($event,qno)' [(ngModel)]="opt" value="inputval2" checked/>&nbsp;{{inputval2}} <br/>
+        </div><br/>   
+      <div class="float-left">
+      <input type="radio" id=3 name="opt" (click)='option_click($event,qno)' [(ngModel)]="opt" value="inputval3" checked/>&nbsp;{{inputval3}}  <br/>
+      </div><br/>   
+     <div class="float-left">
+    <input type="radio" id=4 name="opt" (click)='option_click($event,qno)' [(ngModel)]="opt" value="inputval4" checked/>&nbsp;{{inputval4}}<br/>
+      </div>
+   
+    
+ <br/><br/>  
+ <div class="float-left">  
+  <br/><Br/><button id=1  class="btn btn-primary" (click)='qno_click($event)'>1</button>&nbsp;
+  <button id=2  class="btn btn-primary" (click)='qno_click($event)'>2</button>&nbsp;
+  <button id=3  class="btn btn-primary" (click)='qno_click($event)'>3</button>&nbsp;
+  <button id=4  class="btn btn-primary" (click)='qno_click($event)'>4</button>&nbsp;
+  <button id=5  class="btn btn-primary" (click)='qno_click($event)'>5</button>&nbsp;
+  <button id=6  class="btn btn-primary" (click)='qno_click($event)'>6</button>&nbsp;
+  <button id=7  class="btn btn-primary" (click)='qno_click($event)'>7</button>&nbsp;
+  <button id=8  class="btn btn-primary" (click)='qno_click($event)'>8</button>&nbsp;
+  <button id=9  class="btn btn-primary" (click)='qno_click($event)'>9</button>&nbsp;
+  <button id=10  class="btn btn-primary" (click)='qno_click($event)'>10</button>&nbsp;
+  </div>
+
+<!--<br/>{{idval}}   -->
+ {{msg}}
+<!--<br/><br/><button  (click)='btnsave_click()'>save</button>   --> 
+  {{tuple}}
+
+  <br/><br/><br/><br/><button (click)='finish_click()' class="btn btn-success">Finish</button>

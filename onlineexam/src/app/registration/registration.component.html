@@ -1,0 +1,26 @@
+
+<div style="text-align:center">
+<h3>{{title}}</h3>
+<h5> {{msg}}</h5>
+<BR/><BR/>PRN Number*                :<input  [(ngModel)]='objstudinfo.prnno'/>
+<BR/><br/>First Name*           :<input [disabled]='toggletxtfname' [(ngModel)]='objstudinfo.sfname'/>
+<BR/><BR/>Last Name*            :<input [disabled]='toggletxtlname' [(ngModel)]='objstudinfo.slname'/>
+<BR/><BR/>Phone Number*         :<input [disabled]='toggletxtphone' [(ngModel)]='objstudinfo.sphone'/>
+<BR/><BR/>Exam Date*(mm/dd/yyyy):<input  [disabled]='toggletxtedate' [(ngModel)]='objstudinfo.examdate'/>
+<BR/><BR/>Password*             :<input [disabled]='toggletxtpwd' type="password" [(ngModel)]='objstudinfo.password'/>
+<br/><br/>Subject*              : <select [disabled]='toggleselsub' (change)="abc($event)" >
+                                   <option value="">----------select---------</option>
+                                   <option value="1">CPP</option>
+                                   <option value="2">Core Java</option>
+                                   <option value="3">Dot Net</option>
+								   <option value="4">Database Technologies</option>
+								   <option value="5">Data Structures</option>
+                                  </select>                              <!--<input [(ngModel)]='subname'/>-->
+<Br/>{{tipmsg}}
+<!--<Br/><br/> <button (click)='Register_click()' class="btn btn-success">Register</button>&nbsp;&nbsp;&nbsp;-->
+<Br/><br/> <button (click)='Register_click()' class="btn btn-success"><a routerLink="/login" style ="color:white">Submit</a></button>&nbsp;&nbsp;&nbsp;
+<!--<Br/><br/> <button [disabled]='togglebtnchkreg'(click)='chkRegister_click()' class="btn btn-success"><a routerLink="/login" style ="color:white">Check If Registered?</a></button>&nbsp;&nbsp;&nbsp;-->
+<!--<button  (click)='GotoLogin()' class="btn btn-success"><a routerLink="/login" style ="color:white">AppearForExam</a></button>-->
+</div>
+<!--[disabled]='togglebtnappear'-->
+

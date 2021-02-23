@@ -1,0 +1,16 @@
+
+<div style="text-align:center">
+<h2>{{title}}</h2>
+<BR/><BR/>PRN Number*                :<input  [(ngModel)]='objstudinfo.prnno'/>
+<BR/><br/>First Name*           :<input  [(ngModel)]='objstudinfo.sfname'/>
+<BR/><BR/>Last Name*            :<input  [(ngModel)]='objstudinfo.slname'/>
+<BR/><BR/>Phone Number*         :<input  [(ngModel)]='objstudinfo.sphone'/>
+<BR/><BR/>Exam Date*(mm/dd/yyyy):<input  [(ngModel)]='objstudinfo.examdate'/>
+<BR/><BR/>Password*             :<input  [(ngModel)]='objstudinfo.password'/>
+<br/><br/>Subject*              : <input [(ngModel)]='subname'/>
+<Br/>{{tipmsg}}
+<Br/><br/> <button (click)='Register_click()' class="btn btn-success">Register</button>&nbsp;&nbsp;&nbsp;
+<button (click)='GotoLogin()' class="btn btn-success"><a routerLink="/login" style ="color:white">AppearForExam</a></button>
+</div>
+
+

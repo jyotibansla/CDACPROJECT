@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:'#b3cbdd'\;">
+  
+    <div class="topnav" class="collapse navbar-collapse"  id="navbarText" style="background-color:black; overflow:hidden;" >
+      <ul class="navbar-nav">
+        
+      <a class="navbar-brand"   style="color:white"  routerLink='/home-component'>Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      
+      <!--<a class="nav-link" style="color:white" routerLink='/Registration-component' >Student-Registration</a>-->
+      <a class="nav-link" style="color:white"  topnav-right="float-right" ng-show='localStorage.getItem("logout")==true'  routerLink='/Login-component' >SignIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="nav-link" style="color:white" topnav-right="float-right" routerLink='/Registration-component' >Register</a>
+       </ul>  </div>
+       <!--<div class="float:right"  *ngif="user.IsLoggedIn==true" *ngif='localStorage.getItem("loginst")==1' >
+        <div  class="float:right">
+       
+        <button  (onclick)="logout_click()"><a  routerLink="/home-component"  class="float:right"  style="color:brown" >Logout</a></button><BR/><BR/>
+                          
+        </div>  -->   
+ 
+  </nav>
+{{message}}

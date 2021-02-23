@@ -1,0 +1,32 @@
+
+   
+    
+     <!--<button (onclick)="logout_click()" class="float-right"><a  routerLink="/home-component"    style="color:brown" >Logout</a></button>-->
+     
+     
+                                                           {{message}}<BR/>
+
+     
+    <div style="text-align:left">
+      <h5><span class="float-center" style="color:blue">PRN Number:&nbsp;&nbsp;&nbsp; {{prn}} &nbsp;&nbsp;&nbsp;</span></h5><BR/>
+      <h5><span class="float-center" style="color:blue">Student Name:&nbsp; {{msg}} &nbsp;&nbsp;&nbsp;</span></h5><BR/>
+      <h5><span class="float-center" style="color:blue">Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{subject}}&nbsp;&nbsp;</span></h5>
+    </div>  <br/><br/><br/>       
+    
+    <div style="text-align:left">
+      <h3>Examination Instructions For Student</h3>
+
+      ><ol>        
+       <h6> <li>On clicking Start Exam button exam timer will start</li></h6>
+      <h6>  <li>Do not close the browser during the exam session.</li></h6>
+      <h6>  <li>Any question can be accessed/modified randomly during the exam. </li></h6>
+      <h6>  <li>Exam page will be closed once time is over.</li></h6>
+       <h6> <li>Result will be displayed.</li></h6>
+      </ol>  
+   </div><br/>
+      <button (click)='StartExam_click()' class="float-right" class="btn btn-success"><a routerLink="/login" style ="color:white">Start Exam</a></button>
+
+    
+    
+
+
